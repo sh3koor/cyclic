@@ -31,7 +31,7 @@ app.post("/", (req, res) => {
   //   Now we are ready to make our request to API
   const options = {
     method: "POST",
-    auth: "Salem:19ef149b7063530d98c1ae13cc73d8c7w-us21",
+    auth: "Salem:19ef149b7063530d98c1ae13cc73d8c7-us21",
   };
   const url = "https://us21.api.mailchimp.com/3.0/lists/50277db7dc";
   const postRequest = https.request(url, options, (response) => {
@@ -49,7 +49,7 @@ app.post("/", (req, res) => {
   postRequest.end();
 });
 app.listen(process.env.PORT || 3000, () => {
-  console.log("Server is running on port 3000");
+  console.log("Server is running on Heroku or  port 3000");
 });
 
 // API key
